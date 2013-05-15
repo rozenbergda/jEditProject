@@ -132,7 +132,7 @@ public class VFSFileChooserDialog extends EnhancedDialog
 		boolean choosingDir = (browser.getMode() ==
 			VFSBrowser.CHOOSE_DIRECTORY_DIALOG);
 
-		if(files.length != 0)
+		if(files.length != 0 && browser.getMode() != 1)
 		{
 			if(choosingDir)
 			{
